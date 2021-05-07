@@ -32,11 +32,14 @@
     --color-text-08: hsl(173, 88%, 39%);
     --color-text-09: hsl(197, 37%, 24%);
     --color-text-10: hsl(197, 60%, 24%);
-
 }
+@font-face {
+    font-family: 'Comic Sans MS';
+    src: url("comic-sans-ms/comici.ttf");
+  }
 body {
-    font-family: 'Comic Sans MS', 'Chalkboard SE', 'Comic Neue', sans-serif;
-   
+    font-family: 'Itim', cursive;
+    font-size: 1vw;
     background: linear-gradient(-45deg, hsl(0, 0%, 15%), hsl(0, 0%, 20%), hsl(0, 0%, 25%), hsl(0, 0%, 30%));
 	background-size: 400% 800%;
     animation-name: gradient;
@@ -79,7 +82,6 @@ img{
   
 .image-zoom:hover {
     transform: scale(1.2);
-    font-size: 2.2vw;
   }
 
 span {
@@ -89,7 +91,7 @@ span {
     display: table-cell;
     vertical-align: middle;
     padding: 1em;
-    font-size: 2vw;
+    font-size: 2vh;
 }
 
 .tool-tip .tool-tip-text {
