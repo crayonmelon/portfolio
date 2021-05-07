@@ -36,7 +36,14 @@
 }
 body {
     font-family: 'Comic Sans MS', 'Chalkboard SE', 'Comic Neue', sans-serif;
-    background-color: rgb(29, 29, 29);
+   
+    background: linear-gradient(-45deg, hsl(0, 0%, 15%), hsl(0, 0%, 20%), hsl(0, 0%, 25%), hsl(0, 0%, 30%));
+	background-size: 400% 800%;
+    animation-name: gradient;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-duration: 10s;
+
 }
 
 .title {
@@ -44,16 +51,21 @@ body {
     font-size: 7vw;
     text-align: center;
     animation-name: spin;
-    animation-timing-function: linear;
+    animation-timing-function: ease;
     animation-iteration-count: infinite;
     animation-duration: 1s;
+}
+.page-top{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: aquamarine;
 }
 
 .links {
     display: flex;
     align-items: center;
     justify-content: center;
-
 }
 
 img{
@@ -61,10 +73,31 @@ img{
     top: 4vw;
 }
 
+.image-zoom{
+    transition: transform .2s;
+  }
+  
+.image-zoom:hover {
+    transform: scale(1.2);
+  }
+
 span {
     display: table-cell;
     vertical-align: middle;
     padding: 1em;
+    font-size: 2vw;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
 }
 
 @keyframes spin {
