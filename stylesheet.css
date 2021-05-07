@@ -1,0 +1,197 @@
+
+:root{
+    --size-01x: 0em;
+    --size-02x: 0.1em;
+    --size-03x: 0.15em;
+    --size-04x: 0.3em;
+    --size-05x: 0.4em;
+    --size-06x: 0.5em;
+    --size-07x: 0.4em;
+    --size-08x: 0.3em;
+    --size-09x: 0.15em;
+    --size-10x: 0.1em;
+
+    --size-01y: 0.1em;
+    --size-02y: 0.15em;
+    --size-03y: 0.2em;
+    --size-04y: 0.25em;
+    --size-05y: 0.3em;
+    --size-06y: 0.35em;
+    --size-07y: 0.4em;
+    --size-08y: 0.45em;
+    --size-09y: 0.5em;
+    --size-10y: 0.55em;
+
+    --color-text-01: hsl(12, 76%, 61%);
+    --color-text-02: hsl(12, 96%, 61%);
+    --color-text-03: hsl(27, 87%, 67%);
+    --color-text-04: hsl(27, 100%, 67%);
+    --color-text-05: hsl(43, 74%, 66%);
+    --color-text-06: hsl(43, 100%, 66%);
+    --color-text-07: hsl(173, 58%, 39%);
+    --color-text-08: hsl(173, 88%, 39%);
+    --color-text-09: hsl(197, 37%, 24%);
+    --color-text-10: hsl(197, 60%, 24%);
+
+}
+body {
+    font-family: 'Comic Sans MS', 'Chalkboard SE', 'Comic Neue', sans-serif;
+    background-color: rgb(29, 29, 29);
+}
+
+.title {
+    color: hsla(12, 36%, 61%, 0);
+    font-size: 7vw;
+    text-align: center;
+    animation-name: spin;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-duration: 1s;
+}
+
+@keyframes spin {
+
+    0%   { 
+        text-shadow: 
+        var(--size-01x) var(--size-01y) var(--color-text-01),
+        var(--size-02x) var(--size-02y) var(--color-text-02),
+        var(--size-03x) var(--size-03y) var(--color-text-03),
+        var(--size-04x) var(--size-04y) var(--color-text-04),
+        var(--size-05x) var(--size-05y) var(--color-text-05),
+        var(--size-06x) var(--size-06y) var(--color-text-06),
+        var(--size-07x) var(--size-07y) var(--color-text-07),
+        var(--size-08x) var(--size-08y) var(--color-text-08),
+        var(--size-09x) var(--size-09y) var(--color-text-09),
+        var(--size-10x) var(--size-10y) var(--color-text-10);
+    }
+    10% { 
+        text-shadow: 
+        var(--size-10x) var(--size-01y) var(--color-text-02),
+        var(--size-01x) var(--size-02y) var(--color-text-03),
+        var(--size-02x) var(--size-03y) var(--color-text-04),
+        var(--size-03x) var(--size-04y) var(--color-text-05),
+        var(--size-04x) var(--size-05y) var(--color-text-06),
+        var(--size-05x) var(--size-06y) var(--color-text-07),
+        var(--size-06x) var(--size-07y) var(--color-text-08),
+        var(--size-07x) var(--size-08y) var(--color-text-09),
+        var(--size-08x) var(--size-09y) var(--color-text-10),
+        var(--size-09x) var(--size-10y) var(--color-text-01);
+    }
+    20% { 
+        text-shadow: 
+        var(--size-09x) var(--size-01y) var(--color-text-03),
+        var(--size-10x) var(--size-02y) var(--color-text-04),
+        var(--size-01x) var(--size-03y) var(--color-text-05),
+        var(--size-02x) var(--size-04y) var(--color-text-06),
+        var(--size-03x) var(--size-05y) var(--color-text-07),
+        var(--size-04x) var(--size-06y) var(--color-text-08),
+        var(--size-05x) var(--size-07y) var(--color-text-09),
+        var(--size-06x) var(--size-08y) var(--color-text-10),
+        var(--size-07x) var(--size-09y) var(--color-text-01),
+        var(--size-08x) var(--size-10y) var(--color-text-02);
+    }
+    30% {
+        text-shadow: 
+        var(--size-08x) var(--size-01y) var(--color-text-04),
+        var(--size-09x) var(--size-02y) var(--color-text-05),
+        var(--size-10x) var(--size-03y) var(--color-text-06),
+        var(--size-01x) var(--size-04y) var(--color-text-07),
+        var(--size-02x) var(--size-05y) var(--color-text-08),
+        var(--size-03x) var(--size-06y) var(--color-text-09),
+        var(--size-04x) var(--size-07y) var(--color-text-10),
+        var(--size-05x) var(--size-08y) var(--color-text-01),
+        var(--size-06x) var(--size-09y) var(--color-text-02),
+        var(--size-07x) var(--size-10y) var(--color-text-03);
+    }
+    40% {
+        text-shadow: 
+        var(--size-07x) var(--size-01y) var(--color-text-05),
+        var(--size-08x) var(--size-02y) var(--color-text-06),
+        var(--size-09x) var(--size-03y) var(--color-text-07),
+        var(--size-10x) var(--size-04y) var(--color-text-08),
+        var(--size-01x) var(--size-05y) var(--color-text-09),
+        var(--size-02x) var(--size-06y) var(--color-text-10),
+        var(--size-03x) var(--size-07y) var(--color-text-01),
+        var(--size-04x) var(--size-08y) var(--color-text-02),
+        var(--size-05x) var(--size-09y) var(--color-text-03),
+        var(--size-06x) var(--size-10y) var(--color-text-04);
+    }
+    50% {
+        text-shadow: 
+        var(--size-06x) var(--size-01y) var(--color-text-06),
+        var(--size-07x) var(--size-02y) var(--color-text-07),
+        var(--size-08x) var(--size-03y) var(--color-text-08),
+        var(--size-09x) var(--size-04y) var(--color-text-09),
+        var(--size-10x) var(--size-05y) var(--color-text-10),
+        var(--size-01x) var(--size-06y) var(--color-text-01),
+        var(--size-02x) var(--size-07y) var(--color-text-02),
+        var(--size-03x) var(--size-08y) var(--color-text-03),
+        var(--size-04x) var(--size-09y) var(--color-text-04),
+        var(--size-05x) var(--size-10y) var(--color-text-05);
+    }
+    60% {
+        text-shadow: 
+        var(--size-05x) var(--size-01y) var(--color-text-07),
+        var(--size-06x) var(--size-02y) var(--color-text-08),
+        var(--size-07x) var(--size-03y) var(--color-text-09),
+        var(--size-08x) var(--size-04y) var(--color-text-10),
+        var(--size-09x) var(--size-05y) var(--color-text-01),
+        var(--size-10x) var(--size-06y) var(--color-text-02),
+        var(--size-01x) var(--size-07y) var(--color-text-03),
+        var(--size-02x) var(--size-08y) var(--color-text-04),
+        var(--size-03x) var(--size-09y) var(--color-text-05),
+        var(--size-04x) var(--size-10y) var(--color-text-06);
+    }
+    70% {
+        text-shadow: 
+        var(--size-04x) var(--size-01y) var(--color-text-08),
+        var(--size-05x) var(--size-02y) var(--color-text-09),
+        var(--size-06x) var(--size-03y) var(--color-text-10),
+        var(--size-07x) var(--size-04y) var(--color-text-01),
+        var(--size-08x) var(--size-05y) var(--color-text-02),
+        var(--size-09x) var(--size-06y) var(--color-text-03),
+        var(--size-10x) var(--size-07y) var(--color-text-04),
+        var(--size-01x) var(--size-08y) var(--color-text-05),
+        var(--size-02x) var(--size-09y) var(--color-text-06),
+        var(--size-03x) var(--size-10y) var(--color-text-07);
+    }
+    80% {
+        text-shadow: 
+        var(--size-03x) var(--size-01y) var(--color-text-09),
+        var(--size-04x) var(--size-02y) var(--color-text-10),
+        var(--size-05x) var(--size-03y) var(--color-text-01),
+        var(--size-06x) var(--size-04y) var(--color-text-02),
+        var(--size-07x) var(--size-05y) var(--color-text-03),
+        var(--size-08x) var(--size-06y) var(--color-text-04),
+        var(--size-09x) var(--size-07y) var(--color-text-05),
+        var(--size-10x) var(--size-08y) var(--color-text-06),
+        var(--size-01x) var(--size-09y) var(--color-text-07),
+        var(--size-02x) var(--size-10y) var(--color-text-08);
+    }
+    90% {
+        text-shadow: 
+        var(--size-02x) var(--size-01y) var(--color-text-10),
+        var(--size-03x) var(--size-02y) var(--color-text-01),
+        var(--size-04x) var(--size-03y) var(--color-text-02),
+        var(--size-05x) var(--size-04y) var(--color-text-03),
+        var(--size-06x) var(--size-05y) var(--color-text-04),
+        var(--size-07x) var(--size-06y) var(--color-text-05),
+        var(--size-08x) var(--size-07y) var(--color-text-06),
+        var(--size-09x) var(--size-08y) var(--color-text-07),
+        var(--size-10x) var(--size-09y) var(--color-text-08),
+        var(--size-01x) var(--size-10y) var(--color-text-09);
+    }
+    100% {
+        text-shadow: 
+        var(--size-01x) var(--size-01y) var(--color-text-01),
+        var(--size-02x) var(--size-02y) var(--color-text-02),
+        var(--size-03x) var(--size-03y) var(--color-text-03),
+        var(--size-04x) var(--size-04y) var(--color-text-04),
+        var(--size-05x) var(--size-05y) var(--color-text-05),
+        var(--size-06x) var(--size-06y) var(--color-text-06),
+        var(--size-07x) var(--size-07y) var(--color-text-07),
+        var(--size-08x) var(--size-08y) var(--color-text-08),
+        var(--size-09x) var(--size-09y) var(--color-text-09),
+        var(--size-10x) var(--size-10y) var(--color-text-10);
+    }
+}
