@@ -49,6 +49,24 @@ body {
     animation-duration: 1s;
 }
 
+.links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+img{
+    width: 8vw;
+    top: 4vw;
+}
+
+span {
+    display: table-cell;
+    vertical-align: middle;
+    padding: 1em;
+}
+
 @keyframes spin {
 
     0%   { 
